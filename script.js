@@ -4,14 +4,8 @@ const nav = document.querySelector('.nav');
 if (menuToggle && nav) {
   menuToggle.addEventListener('click', () => {
     nav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(nav.classList.contains('open')));
-  });
-
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    });
+    const expanded = nav.classList.contains('open');
+    menuToggle.setAttribute('aria-expanded', String(expanded));
   });
 }
 
@@ -50,7 +44,8 @@ if (counter) {
 
   const tick = (now) => {
     const progress = Math.min((now - start) / durationMs, 1);
-    counter.textContent = Math.floor(progress * target).toLocaleString('pt-BR');
+    const value = Math.floor(progress * target);
+    counter.textContent = value.toLocaleString('pt-BR');
 
     if (progress < 1) {
       requestAnimationFrame(tick);

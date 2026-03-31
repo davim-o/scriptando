@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCRIPTA | Abertura dos Jogos Internos IFRN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="topo">
+      <div class="container nav-wrapper">
+        <a href="#topo" class="logo-link" aria-label="Página inicial SCRIPTA">
+          <img src="imgs/logo.png" alt="Logo do projeto SCRIPTA" class="logo" />
+          <span>SCRIPTA</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#topo" class="active">Home</a>
+          <a href="#abertura">Abertura dos Jogos</a>
+          <a href="#diretorias">Diretorias</a>
+          <a href="#sobre">Sobre o Projeto</a>
+          <a href="#login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="abertura" aria-label="Abertura do Projeto SCRIPTA">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-slides">
+          <div class="hero-slide active" style="background-image: url('imgs/abertura1.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('imgs/abertura2.jpg')"></div>
+          <div class="hero-slide" style="background-image: url('imgs/abertura3.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('imgs/abertura4.jpg')"></div>
+        </div>
+
+        <button class="slider-btn prev" aria-label="Slide anterior">❮</button>
+        <button class="slider-btn next" aria-label="Próximo slide">❯</button>
+
+        <div class="container hero-content">
+          <h1>Abertura do Projeto SCRIPTA 2025</h1>
+          <p>
+            Explorando o potencial das equipes e integração entre diretorias.
+          </p>
+          <a class="btn-primary" href="#sobre">Saiba mais</a>
+        </div>
+      </section>
+
+      <section class="section" id="diretorias">
+        <div class="container">
+          <h2>Diretorias Participantes</h2>
+          <div class="cards-grid">
+            <article class="diretoria-card">
+              <div class="card-body">
+                <h3>DIATINF</h3>
+                <p>
+                  Diretoria focada em tecnologia, inovação e integração digital para apoiar a organização do evento.
+                </p>
+                <img src="imgs/diatinflogo.png" alt="Mascote Tigre da DIATINF" />
+              </div>
+              <div class="card-tag diatinf">DIATINF • Tigre</div>
+            </article>
+
+            <article class="diretoria-card">
+              <div class="card-body">
+                <h3>DIAREN</h3>
+                <p>
+                  Diretoria voltada à articulação de equipes e suporte operacional para uma abertura dinâmica e eficiente.
+                </p>
+                <img src="imgs/diarenlogo.png" alt="Mascote Cavalo da DIAREN" />
+              </div>
+              <div class="card-tag diaren">DIAREN • Cavalo</div>
+            </article>
+
+            <article class="diretoria-card">
+              <div class="card-body">
+                <h3>DIACON</h3>
+                <p>
+                  Diretoria responsável pela coordenação estratégica e comunicação institucional entre os participantes.
+                </p>
+                <img src="imgs/diaconlogo.png" alt="Mascote Dragão da DIACON" />
+              </div>
+              <div class="card-tag diacon">DIACON • Dragão</div>
+            </article>
+
+            <article class="diretoria-card">
+              <div class="card-body">
+                <h3>DIACIN</h3>
+                <p>
+                  Diretoria dedicada ao acompanhamento das equipes e fortalecimento da integração no projeto.
+                </p>
+                <img src="imgs/diacinlogo.png" alt="Mascote Cobra da DIACIN" />
+              </div>
+              <div class="card-tag diacin">DIACIN • Cobra</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="info">
+        <div class="container lower-grid">
+          <article class="panel" id="login">
+            <h2>Login</h2>
+            <form>
+              <label for="usuario">Usuário</label>
+              <input id="usuario" type="text" placeholder="Digite seu usuário" />
+
+              <label for="senha">Senha</label>
+              <input id="senha" type="password" placeholder="Digite sua senha" />
+
+              <button type="submit" class="btn-primary full">Entrar</button>
+              <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </form>
+          </article>
+
+          <article class="panel" id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>
+              O SCRIPTA é uma plataforma desenvolvida para organizar a abertura dos jogos internos do IFRN, permitindo o cadastro de líderes e sublíderes das diretorias, promovendo integração, gestão eficiente e acompanhamento das equipes envolvidas no evento.
+            </p>
+          </article>
+
+          <article class="panel counter-panel">
+            <h2>Engajamento</h2>
+            <p class="counter" data-target="3892">0</p>
+            <p>Pessoas engajadas no projeto</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+        <p>@projetoscripta</p>
+        <p>© 2025 Projeto SCRIPTA</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

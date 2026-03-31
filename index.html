@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCRIPTA | Abertura dos Jogos Internos IFRN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="topo">
+      <div class="container nav-wrapper">
+        <a href="#topo" class="logo-link" aria-label="Página inicial SCRIPTA">
+          <img src="imgs/logo.png" alt="Logo do projeto SCRIPTA" class="logo" />
+          <span>SCRIPTA</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#topo" class="active">Home</a>
+          <a href="#abertura">Abertura dos Jogos</a>
+          <a href="#diretorias">Diretorias</a>
+          <a href="#sobre">Sobre o Projeto</a>
+          <a href="#login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="abertura" aria-label="Abertura do Projeto SCRIPTA">
+        <div class="hero-slides">
+          <div class="hero-slide active" style="background-image: url('imgs/abertura1.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('imgs/abertura2.jpg')"></div>
+          <div class="hero-slide" style="background-image: url('imgs/abertura3.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('imgs/abertura4.jpg')"></div>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <button class="slider-btn prev" aria-label="Slide anterior">❮</button>
+        <button class="slider-btn next" aria-label="Próximo slide">❯</button>
+
+        <div class="container hero-content">
+          <h1>Abertura do Projeto SCRIPTA 2025</h1>
+          <p>Explorando o potencial das equipes e integração entre diretorias.</p>
+          <a class="btn-primary" href="#sobre">Saiba mais</a>
+        </div>
+      </section>
+
+      <section class="section" id="diretorias">
+        <div class="container">
+          <h2>Diretorias Participantes</h2>
+          <div class="cards-grid">
+            <article class="card diretoria-card">
+              <div class="card-content">
+                <h3>DIATINF</h3>
+                <p>Diretoria de tecnologia, inovação e integração digital para o evento.</p>
+                <img src="imgs/diatinflogo.png" alt="Mascote Tigre da DIATINF" class="mascote" />
+              </div>
+              <div class="card-footer diatinf" aria-hidden="true"></div>
+            </article>
+
+            <article class="card diretoria-card">
+              <div class="card-content">
+                <h3>DIAREN</h3>
+                <p>Diretoria de articulação, logística e suporte operacional das equipes.</p>
+                <img src="imgs/diarenlogo.png" alt="Mascote Cavalo da DIAREN" class="mascote" />
+              </div>
+              <div class="card-footer diaren" aria-hidden="true"></div>
+            </article>
+
+            <article class="card diretoria-card">
+              <div class="card-content">
+                <h3>DIACON</h3>
+                <p>Diretoria de coordenação estratégica e comunicação institucional.</p>
+                <img src="imgs/diaconlogo.png" alt="Mascote Dragão da DIACON" class="mascote" />
+              </div>
+              <div class="card-footer diacon" aria-hidden="true"></div>
+            </article>
+
+            <article class="card diretoria-card">
+              <div class="card-content">
+                <h3>DIACIN</h3>
+                <p>Diretoria de integração, acompanhamento e apoio contínuo das equipes.</p>
+                <img src="imgs/diacinlogo.png" alt="Mascote Cobra da DIACIN" class="mascote" />
+              </div>
+              <div class="card-footer diacin" aria-hidden="true"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="login-section" id="login" aria-label="Acesso ao sistema">
+        <div class="container login-container">
+          <article class="login-card">
+            <h2>Login</h2>
+            <form>
+              <label for="usuario">Usuário</label>
+              <input id="usuario" type="text" placeholder="Digite seu usuário" />
+
+              <label for="senha">Senha</label>
+              <input id="senha" type="password" placeholder="Digite sua senha" />
+
+              <button type="submit" class="btn-login">Entrar</button>
+              <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container lower-grid">
+          <article class="card info-card">
+            <h2>Sobre o Projeto</h2>
+            <p>
+              O SCRIPTA é uma plataforma desenvolvida para organizar a abertura dos jogos internos do IFRN, permitindo o cadastro de líderes e sublíderes das diretorias, promovendo integração, gestão eficiente e acompanhamento das equipes envolvidas no evento.
+            </p>
+          </article>
+
+          <article class="card info-card counter-card">
+            <h2>Engajamento</h2>
+            <p class="counter" data-target="3892">0</p>
+            <p>Pessoas engajadas no projeto</p>
+          </article>
+
+          <article class="card info-card">
+            <h2>Diretorias Ativas</h2>
+            <ul class="simple-list">
+              <li>DIATINF</li>
+              <li>DIAREN</li>
+              <li>DIACON</li>
+              <li>DIACIN</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+          <a href="#" aria-label="Facebook" title="Facebook">FB</a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">IN</a>
+        </div>
+        <p>@projetoscripta</p>
+        <p>© 2025 Projeto SCRIPTA</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
